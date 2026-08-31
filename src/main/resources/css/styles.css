@@ -1,0 +1,87 @@
+.root {
+    /* BACKGROUND */
+    -bg-main:  #79BEC3;
+    -bg-main-card: #D2CFCE;
+    -bg-border: #3A6C70;
+    -bg-btn-hover: #BBC6C6;
+    /* TEXT */
+    -main-text: #181A1E;
+    -text-warning: #FF473D;
+    -text-hover: #5662F6;
+}
+
+/* PANELS */
+.rootPane {
+    -fx-background-color: -bg-main;
+}
+
+.card-a {
+    -fx-background-color: -bg-main-card;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-width: 3px;
+    -fx-border-color: -bg-border;
+}
+.player-card:hover {
+    -fx-opacity: 0.7;
+    -fx-cursor: hand;
+}
+
+/* LABELS */
+.label-a {
+    -fx-text-fill: -main-text;
+    -fx-font-size:  33px;
+    -fx-font-weight: bold;
+}
+.label-b {
+    -fx-text-fill: -main-text;
+    -fx-font-size:  20px;
+    -fx-font-weight: bold;
+}
+.label-warning {
+    -fx-text-fill: -text-warning;
+    -fx-font-size:  25px;
+}
+.selectable:hover {
+    -fx-cursor: hand;
+    -fx-text-fill: -text-hover;
+}
+/* BUTTONS */
+.button-a {
+    -fx-background-color: -bg-main-card;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-width: 3px;
+    -fx-border-color: -bg-border;
+    -fx-text-fill: -main-text;
+    -fx-font-size:  16px;
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+.button-a:hover {
+    -fx-background-color: -bg-btn-hover;
+}
+/* LIFE-BARS */
+.barra-verde .bar {
+    -fx-background-color: linear-gradient(to right, #00ff00, #00cc00);
+}
+
+.barra-amarilla .bar {
+    -fx-background-color: linear-gradient(to right, #ffff00, #cccc00);
+}
+
+.barra-roja .bar {
+    -fx-background-color: linear-gradient(to right, #ff0000, #cc0000);
+}
+
+ProgressBar .track {
+    -fx-background-color: #555555;
+    -fx-background-radius: 5;
+}
+
+/* EXTRAS */
+.separator {
+    -fx-border-width: 0 0 3px 0;
+    -fx-border-color: transparent transparent -bg-border transparent;
+}
